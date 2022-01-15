@@ -9,11 +9,10 @@ In order to run the application, run the following commands: <br/>
 
 **The server is now running in host ```localhost``` and listening to port ```8000```**
 
-<br/>
 For your convenience, below is all the information you need in order to play/use the application:
 
 
-###Models:
+### Models:
 
 > **Job**
 ```{title: str, skills: List[Skill]}```
@@ -24,7 +23,7 @@ For your convenience, below is all the information you need in order to play/use
 > **Candidate**
 ```{id: Optional[int], title: str, skills: List[Skill]}```
 
-###API:
+### API:
 
 | Request Type | Route                                    | Payload Payload | Response                            | Description                                           |
 |--------------|------------------------------------------|-----------------|-------------------------------------|-------------------------------------------------------|
