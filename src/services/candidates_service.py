@@ -7,7 +7,7 @@ from src.models.job import Job
 
 
 candidate_id_pk: int = candidates_sample[len(candidates_sample) - 1].id + 1
-candidatesTable = candidates_sample
+candidatesTable: List[Candidate] = candidates_sample
 
 
 def get_candidates():
@@ -40,7 +40,7 @@ def remove_candidate(candidate_id: int):
     if len_without_candidate == len(candidatesTable):
         return "Candidate not found!"
     else:
-        candidatesTable = list(filter(lambda c_id: c_id != candidate_id, candidatesTable))
+        candidatesTable = list(filter(lambda c: c.id != candidate_id, candidatesTable))
         return "Removed successfully!"
 
 
