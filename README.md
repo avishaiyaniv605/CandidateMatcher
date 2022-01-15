@@ -14,7 +14,7 @@ For your convenience, below is all the information you need in order to play/use
 
 ___
 
-##Models:
+###Models:
 > **Job**
 ```{title: str, skills: List[Skill]}```
 
