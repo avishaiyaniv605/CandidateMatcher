@@ -1,7 +1,7 @@
 import uvicorn
 import src.services.candidates_service as candidates_service
 from fastapi.logger import logger
-from typing import List
+from typing import List, Dict
 from fastapi import FastAPI
 from src.models.candidate import Candidate
 from src.models.job import Job
@@ -26,7 +26,7 @@ async def list_candidates():
 
 
 @app.post("/candidates/add")
-async def add_candidates(candidates: List[Candidate]):
+async def add_candidates(candidates: List[Candidate]) -> dict[str, List[Candidate]]:
     """
     calling route /candidates/add with list of candidates will add
     the candidates to the db
@@ -38,7 +38,7 @@ async def add_candidates(candidates: List[Candidate]):
 
 
 @app.get("/candidates/clean")
-async def clean_candidates():
+async def clean_candidates() -> str:
     """
     calling route /candidates/clean will clean all candidates from the db
     """
@@ -48,7 +48,7 @@ async def clean_candidates():
 
 
 @app.delete("/candidates/{candidate_id}")
-async def remove_candidate(candidate_id: int):
+async def remove_candidate(candidate_id: int) -> str:
     """
     calling route /candidates/clean will remove candidate with received id
     """
