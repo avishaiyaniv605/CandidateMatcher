@@ -13,6 +13,7 @@ In order to run the application, run the following commands: <br/>
 For your convenience, below is all the information you need in order to play/use the application:
 
 ___
+
 ##Models:
 > **Job**
 ```{title: str, skills: List[Skill]}```
