@@ -47,7 +47,7 @@ async def clean_candidates():
     return "Cleaned successfully"
 
 
-@app.delete("/candidates/:id")
+@app.delete("/candidates/{candidate_id}")
 async def remove_candidate(candidate_id: int):
     """
     calling route /candidates/clean will remove candidate with received id
