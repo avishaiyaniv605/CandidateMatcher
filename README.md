@@ -12,9 +12,9 @@ In order to run the application, run the following commands: <br/>
 <br/>
 For your convenience, below is all the information you need in order to play/use the application:
 
-___
 
 ###Models:
+
 > **Job**
 ```{title: str, skills: List[Skill]}```
 
@@ -24,11 +24,7 @@ ___
 > **Candidate**
 ```{id: Optional[int], title: str, skills: List[Skill]}```
 
-<br/>
-
-___
-
-
+###API:
 
 | Request Type | Route                                    | Payload Payload | Response                            | Description                                           |
 |--------------|------------------------------------------|-----------------|-------------------------------------|-------------------------------------------------------|
